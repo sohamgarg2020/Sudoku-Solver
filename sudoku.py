@@ -53,7 +53,7 @@ def solve_sudoku(board):
             # Now we can repeat the same process over and over and over again. This is simply recursion.
             if (solve_sudoku(board)):
                 return True
-        
+        board[row][col] = 0
     return False
 
 
